@@ -1,5 +1,5 @@
 install: | 
-  ./zsdk.run -- silent skip_cuda skip_hub skip_tools skip_python
+  ./zsdk.run -- silent skip_hub skip_tools skip_python
 preinstall: |
   apt-get install -y zstd wget
   wget -nv -O zsdk.run "https://download.stereolabs.com/zedsdk/4.0/cu118/ubuntu22?_gl=1*1vjm5ia*_gcl_au*MzczMjkwODMzLjE3MDkxMTI0MTU."
@@ -176,3 +176,4 @@ dependencies:
   - ucf
   - xz-utils
   - udev
+  - cuda-11-8
